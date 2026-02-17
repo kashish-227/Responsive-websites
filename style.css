@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd369;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ffd369;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* SERVICES */
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px 40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:30px;
+    width:300px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    text-align:center;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.25);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+
+/* =================== */
+/* 📱 RESPONSIVE PART */
+/* =================== */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
